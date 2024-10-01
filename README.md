@@ -8,8 +8,8 @@ Chào mừng đến với dự án của **Nhóm 1 - Beauty and Wellness**! Chú
 
 ### Thành viên nhóm:
 
-1. **Nguyễn Mạnh Cường**
-2. **Nguyễn Tuấn Anh**
+1. **Nguyễn Tuấn Anh**
+2. **Nguyễn Mạnh Cường**
 3. **Nguyễn Hoàng Duy**
 4. **Nguyễn Lê Dương**
 
