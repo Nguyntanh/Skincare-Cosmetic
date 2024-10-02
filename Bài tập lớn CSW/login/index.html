@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Đăng nhập</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="login-container">
         <h2>Đăng nhập</h2>
-        <form action="#" method="post">
+        <form id="loginForm" action="#" method="post">
             <div class="input-group">
                 <label for="username">Tên đăng nhập</label>
-                <input type="text" id="username" name="username" required placeholder="Nhập tên đăng nhập của bạn">
+                <input type="text" id="username" name="username" required placeholder="Nhập email hoặc số điện thoại">
+                <span id="usernameError" class="error-message"></span> <!-- Thêm span để hiển thị thông báo lỗi -->
             </div>
             <div class="input-group">
                 <label for="password">Mật khẩu</label>
@@ -30,5 +31,7 @@
             Bạn chưa có tài khoản? <a href="#">Đăng ký ngay</a>
         </div>
     </div>
+
+    <script src="main.js"></script> <!-- Kết nối tệp JS -->
 </body>
 </html>
