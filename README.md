@@ -8,9 +8,9 @@ Chào mừng đến với dự án của **Nhóm 1 - Beauty and Wellness**! Chú
 
 ### Thành viên nhóm:
 
-1. **Nguyễn Tuấn Anh**
-2. **Nguyễn Mạnh Cường**
-3. **Nguyễn Hoàng Duy**
-4. **Nguyễn Lê Dương**
+1. **Nguyễn Tuấn Anh** - Nguyntanh
+2. **Nguyễn Mạnh Cường** - Manhcuong05
+3. **Nguyễn Hoàng Duy** - hduy1405
+4. **Nguyễn Lê Dương** - GuenDuo
 
 Chúng tôi hy vọng rằng dự án này sẽ mang lại giá trị và kiến thức bổ ích cho cộng đồng quan tâm đến làm đẹp và sức khỏe.
