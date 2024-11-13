@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     position: relative;
     font-family: Arial, sans-serif;
     width: 1440px;
     height: 1833px;
     background-color: #FAF9F5;
+    text-decoration: none;
+}
+
+a{
     text-decoration: none;
 }
 
@@ -26,9 +30,10 @@ body {
     opacity: 0px;
     background: #3D021E;
     text-transform: capitalize;
+    text-decoration: none;
     overflow: hidden;
-    font-family: Arial, sans-serif;
 }
+
 
 #value-proposition{
     position: absolute;
@@ -175,6 +180,14 @@ body {
     text-align: left;
 }
 
+#left_frame #middle_frame, a{
+    color:#ffffff;
+}
+
+#left_frame #middle_frame, a:hover{
+    color: #b4004e;
+}
+
 #middle_section{
     position: absolute;
     display: flex;
@@ -288,6 +301,11 @@ body {
     font-weight: 400;
     line-height: 28.8px;
     text-align: left;
+}
+
+#email_submit:hover{
+    background-color: #c9c9c9; 
+    border: 2px solid #FFFFFF;
 }
 
 #terms-conditions{
