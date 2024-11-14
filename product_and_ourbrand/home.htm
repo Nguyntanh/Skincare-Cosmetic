@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let currentIndex = 0;
+            const images = $(".pictures .pic");
+            const totalImages = images.length;
+            const carouselElements = $(".carousel_elements");
+        
+            // Hide all images initially
+            images.hide();
+        
+            // Show the first image
+            $(images[currentIndex]).show();
+        
+            // Function to show the next image
+            function showNextImage() {
+                $(images[currentIndex]).fadeOut(500);
+                currentIndex = (currentIndex + 1) % totalImages;
+                $(images[currentIndex]).fadeIn(500);
+                updateCarouselIndicators();
+            }
+        
+            // Function to show the previous image
+            function showPreviousImage() {
+                $(images[currentIndex]).fadeOut(500);
+                currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+                $(images[currentIndex]).fadeIn(500);
+                updateCarouselIndicators();
+            }
+        
+            // Update carousel indicators (nút màu)
+            function updateCarouselIndicators() {
+                carouselElements.removeClass('active');
+                $(carouselElements[currentIndex]).addClass('active');
+            }
+        
+            // Click event for vector_right to show next image
+            $(".vector_right").click(function() {
+                showNextImage();
+            });
+        
+            // Click event for vector_left to show previous image
+            $(".vector_left").click(function() {
+                showPreviousImage();
+            });
+        });
+        
+    </script>
+    
+</head>
+<body>
+    <header class="header">
+        <img src="assets/img/logo.png" alt="BeautyA Logo" class="logo-img">
+        
+        <nav class="navbar">
+            <a href="#">Women Make UP</a>
+            <a href="product_01.htm">Women Skincare</a>
+            <a href="#">Gifts & Sets</a>
+            <a href="#">Branches</a>
+            <a href="our_brand.htm">Our Brand</a>
+        </nav>
+
+        <div class="actions">   
+            <div class="search-btn">
+                <img src="assets/img/search icon.png" alt="search" class="search-img">
+            </div>
+            <div id="line1"></div>
+            <div class="globe">
+                <img src="assets/img/language.png" alt="globe" class="globe-img">
+                <div id="globe-text">
+                    <a class="nation">US</a>
+                    <a class="language">(EN)</a>
+                </div>
+            </div>
+        </div>
+        <div id="circle-shadow"></div>          
+    </header>
+
+    <div class="hero">
+        <div class="text_hero">unlock your natural glow </div>
+        <div class="button">
+            <div class="school1"></div>
+            <div class="text_button">Know More</div>
+            <div class="school1"></div>
+        </div>
+        <div class="frame_26085660">
+            <div class="arrow_left">
+                <div class="vector_left"></div>
+            </div>
+        </div>
+        <div class="frame_26085659">
+            <div class="arrow_right">
+                <div class="vector_right"></div>
+            </div>
+        </div>
+            <div class="pictures">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.4XB8NF1awQyApnQDDmBmQwHaEo&pid=Api&P=0&h=180" alt="i1" class="pic">
+            <img src="https://nikonrumors.com/wp-content/uploads/2014/09/Nikon-D750-sample-photo1.jpg" alt="i2" class="pic">
+            <img src="https://softauthor.com/wp-content/uploads/2021/08/CSS-Background-Image-Full-Screent-With-background-Image-1536x1355.png" alt="i3" class="pic">
+            </div>
+        
+    </div>
+
+    <div class="frame_26085870">
+        <div class="carousel_elements 1"><div class="rectangle_12324"></div></div>
+        <div class="carousel_elements 2"><div class="rectangle_12324"></div></div>
+        <div class="carousel_elements 3"><div class="rectangle_12324"></div></div>
+    </div>
+
+    <form action="#" class="frame_26085750">
+        <div class="text_writeUs">
+            <div class="write_us">
+                <div class="email">
+                    <div class="email_vector"></div>
+                </div>
+            </div>
+        </div>
+        <div class="your_info">
+            <div class="info_title"></div>
+            <div class="frame_26085746">
+                <div class="info1">
+                    <div class="title_info1">
+                        <input type="tel" placeholder="Phone Number (Optional)" class="inf_title">
+                    </div>
+                </div>
+                <div class="info2"></div>
+            </div>
+        </div>
+        <div class="frame_26085822">
+            <div class="your_request"></div>
+            <div class="frame_26085855"></div>
+        </div>
+        <div class="frame_26085854"></div>
+        <input type="submit" value="Send" class="buttons">
+    </form>
+
+</body>
+</html>
